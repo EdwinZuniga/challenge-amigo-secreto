@@ -41,10 +41,22 @@ git clone https://github.com/EdwinZuniga/challenge-amigo-secreto.git
 ## Uso
 
 1. Ingresa el nombre de un participante en el campo de texto.
-2. Presiona el botón "Añadir" o la tecla Enter para agregar el participante.
+   
+   ![image](https://github.com/user-attachments/assets/69d18b71-e813-48d2-8ba4-fb6c5a2c7cb8)
+   
+2. Presiona el botón "Añadir" para agregar el participante.
+   
+   ![image](https://github.com/user-attachments/assets/e49d3d76-ecc2-41ac-ab1f-90dfc1b81155)
+   
 3. Repite el proceso hasta tener todos los participantes (mínimo 2).
+   
+   ![image](https://github.com/user-attachments/assets/54f70b94-0005-4e43-84a6-255b6ddd2401)
+   
 4. Presiona el botón "Sortear amigo" para realizar el sorteo.
+    
 5. El resultado del sorteo se mostrará en la pantalla.
+    
+![image](https://github.com/user-attachments/assets/ac31f69f-661f-40a0-b764-dcbc66c469d7)
 
 ## Validaciones
 
