@@ -31,3 +31,28 @@ function actualizarListaAmigos() {
         listaAmigosElement.appendChild(li);
     });
 }
+
+function sortearAmigo() {
+    if (listaAmigos.length < 2) {
+        alert('Se necesitan al menos 2 participantes para realizar el sorteo');
+        return;
+    }
+
+    // Si ya sorteamos todos los amigos, reiniciamos la lista
+    if (amigosSorteados.length === listaAmigos.length) {
+        amigosSorteados = [];
+    }
+
+    // Filtra los amigos que aún no han sido sorteados
+    let amigosDisponibles = listaAmigos.filter(amigo => !amigosSorteados.includes(amigo));
+    
+    // Obtiene un amigo aleatorio de los disponibles
+    let amigoSorteado = amigosDisponibles[Math.floor(Math.random() * amigosDisponibles.length)];
+    
+    // Agrega el amigo sorteado a la lista de sorteados
+    amigosSorteados.push(amigoSorteado);
+
+    // Mostrar el resultado
+    const resultadoElement = document.getElementById('resultado');
+    resultadoElement.innerHTML = `<li>El amigo secreto sorteado es: ${amigoSorteado}</li>`;
+}
